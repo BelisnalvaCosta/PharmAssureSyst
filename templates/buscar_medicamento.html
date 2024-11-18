@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Medicamento</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h2>Buscar Medicamento</h2>
+    <form action="/buscar_medicamento" method="POST">
+        <label for="medicamento">Nome do Medicamento:</label>
+        <input type="text" id="medicamento" name="medicamento" required><br><br>
+
+        <button type="submit">Buscar</button>
+    </form>
+
+    {% if resultado %}
+    <h3>Resultado da Busca:</h3>
+    <p>{{ resultado }}</p>
+    {% endif %}
+</body>
+</html>

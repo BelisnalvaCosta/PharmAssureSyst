@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmAssureSyst</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>FarmAssureSystm Online</h1>
+        <nav>
+            <a href="{{ url_for('login') }}">Login</a> |
+            <a href="{{ url_for('cadastro_cliente') }}">Cadastro Cliente</a> |
+            <a href="{{ url_for('cadastro_medicamento') }}">Cadastro Medicamento</a> |
+            <a href="{{ url_for('buscar_medicamento') }}">Buscar Medicamento</a>
+        </nav>
+    </header>
+</body>
+</html>

@@ -1,0 +1,11 @@
+/farmacia
+    /static
+        /css
+            style.css
+    /templates
+        index.html
+        login.html
+        cadastro_cliente.html
+        cadastro_medicamento.html
+        buscar_medicamento.html
+    app.py

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Medicamento</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h2>Cadastro de Medicamento</h2>
+    <form action="/cadastro_medicamento" method="POST">
+        <label for="nome">Nome do Medicamento:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="descricao">Descrição:</label>
+        <input type="text" id="descricao" name="descricao" required><br><br>
+
+        <label for="preco">Preço:</label>
+        <input type="number" id="preco" name="preco" step="0.01" required><br><br>
+
+        <label for="local">Localização:</label>
+        <input type="text" id="local" name="local" required><br><br>
+
+        <button type="submit">Cadastrar Medicamento</button>
+    </form>
+</body>
+</html>
